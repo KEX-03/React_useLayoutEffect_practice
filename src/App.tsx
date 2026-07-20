@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useLayoutEffect } from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     console.log(count)
   }, [count])
 
